@@ -13,6 +13,10 @@ int main()
     {
         cerr << "Memory allocation failed: " << e.what() << endl;
     }
+    catch (...)
+    {
+        cerr << "An unknown exception occurred during memory allocation." << endl;
+    }
 
     return 0;
 }

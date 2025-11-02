@@ -22,6 +22,10 @@ int main()
     {
         cerr << "Exception Occured: " << e.what() << endl;
     }
+    catch(...)
+    {
+        cerr << "An unknown exception occurred." << endl;
+    }
 
     return 0;
 }
